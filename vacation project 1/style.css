@@ -1,0 +1,1246 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6b35;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.fork-spoon {
+    font-size: 20px;
+}
+
+.logo-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.logo-subtitle {
+    font-size: 14px;
+    color: #3498db;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Navigation Styles */
+.navigation {
+    position: relative;
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0;
+    box-shadow: none;
+    min-width: auto;
+    z-index: auto;
+    border-radius: 0;
+}
+
+/* Show menu when checkbox is checked */
+.menu-toggle-checkbox:checked ~ .navigation .nav-menu {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff6b35;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(45deg, #9b59b6, #3498db);
+    border-radius: 1px;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #2c3e50;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Main Content */
+.main-content {
+    position: relative;
+    min-height: 120vh;
+    padding: 60px 0;
+    z-index: 2;
+    margin-bottom: 0;
+    overflow: visible;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.main-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
+}
+
+/* Decorative Shapes */
+.decorative-shapes {
+    position: absolute;
+    top: 215px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+}
+
+
+/* Teal Shape Image */
+.teal-shape-image {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 370px;
+    height: auto;
+    opacity: 0.9;
+    transform: rotate(deg);
+    z-index: 1;
+}
+
+
+
+/* Food Images */
+.food-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-images-main {
+    position: absolute;
+    bottom: 150px;
+    left: -10px;
+    width: 40%;
+    max-width: 1550px;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* Burger Image on Right Side */
+.burger-image {
+    position: absolute;
+    bottom: -60px;
+    right: -50px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* Most Popular Recipe Section */
+.popular-recipe-section {
+    top: 50px;
+    background-color: #F9F9F9;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.recipe-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.recipe-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .food-image {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.food-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1abc9c;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #1abc9c;
+}
+
+.indicator:hover {
+    background-color: #16a085;
+}
+
+
+/* Animation for mobile menu */
+.menu-toggle-checkbox:checked + .mobile-menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle-checkbox:checked + .mobile-menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle-checkbox:checked + .mobile-menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* New Promotional Section */
+.new-promotional-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+.promotional-content {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 400px;
+}
+
+.promotional-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/* Plate Container with Round Design */
+.plate-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teal-crescent {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(190deg, #4dd9d0, #1abc9c);
+    border-radius: 50%;
+    z-index: 1;
+    
+    opacity: 0.9;
+}
+
+.white-plate {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: -30px;
+    margin-left: -60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.food-promo-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    z-index: 3;
+    position: relative;
+}
+
+.promotional-text {
+    flex: 1;
+    padding-left: 40px;
+    position: relative;
+}
+
+.promo-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.promo-subheading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+.promo-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.promo-button {
+    background-color: #9B59B6;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.promo-button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
+}
+
+/* Decorative Elements */
+.decorative-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+
+.yellow-top-left {
+    top: 10px;
+    left: 10px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid #ffd54f;
+}
+
+.purple-bottom-right {
+    bottom: 30px;
+    right: 50px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #9b59b6;
+    transform: rotate(180deg);
+}
+
+.purple-bottom-left {
+    bottom: 50px;
+    left: 20px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #9b59b6;
+    transform: rotate(180deg);
+}
+
+.yellow-top-right {
+    top: 60px;
+    right: 10px;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid #ffd54f;
+}
+
+.decorative-line {
+    position: absolute;
+    height: 4px;
+    z-index: 10;
+}
+
+.purple-zigzag-left {
+    bottom: 40px;
+    left: 20px;
+    width: 80px;
+    background: repeating-linear-gradient(
+        90deg,
+        #9b59b6 0px,
+        #9b59b6 8px,
+        transparent 8px,
+        transparent 12px
+    );
+    height: 4px;
+}
+
+.purple-zigzag-right {
+    top: 120px;
+    right: 10px;
+    width: 80px;
+    background: repeating-linear-gradient(
+        90deg,
+        #9b59b6 0px,
+        #9b59b6 8px,
+        transparent 8px,
+        transparent 12px
+    );
+    height: 4px;
+}
+
+.purple-zigzag-text {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 80px;
+    background: repeating-linear-gradient(
+        90deg,
+        #9b59b6 0px,
+        #9b59b6 8px,
+        transparent 8px,
+        transparent 12px
+    );
+    height: 4px;
+    z-index: 10;
+}
+
+/* Second Promotional Section */
+.second-promotional-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+.promotional-content-reverse {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 400px;
+    flex-direction: row;
+}
+
+.promotional-content-reverse .promotional-text {
+    padding-left: 0;
+    padding-right: 40px;
+    order: 1;
+}
+
+.promotional-content-reverse .promotional-image {
+    order: 2;
+}
+
+.promo-button-pink {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.promo-button-pink:hover {
+    background-color: #c2185b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+
+/* How it Works Section */
+.how-it-works-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.step-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.purple-icon {
+    background-color: #9B59B6;
+}
+
+.teal-icon {
+    background-color: #4dd9d0;
+}
+
+.pink-icon {
+    background-color: #e91e63;
+}
+
+.step-icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.step-zigzag {
+    font-size: 14px;
+    color: #9B59B6;
+    letter-spacing: 2px;
+}
+
+.step-arrow {
+    font-size: 36px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Background Food Images */
+.background-food-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.food-bg-left {
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 250px;
+    height: auto;
+    opacity: 0.3;
+    transform: rotate(-15deg);
+}
+
+.food-bg-right {
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    width: 300px;
+    height: auto;
+    opacity: 0.3;
+    transform: rotate(15deg);
+}
+
+/* Our Best Chef Section */
+.best-chef-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.chef-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chef-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.chef-subtitle {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.chef-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chef-image-container {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 10;
+    align-self: flex-end;
+    margin-left: 0;
+}
+
+.chef-person-image {
+    width: 280px;
+    left: 120px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 10;
+    display: block;
+}
+
+.chef-card {
+    flex: 1;
+    position: relative;
+    margin-left: -80px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.chef-card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.chef-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.chef-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 50px 40px 220px;
+    color: white;
+}
+
+.chef-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.chef-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.chef-position {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+
+/* Company Profile Section */
+.company-profile-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profile-video-container {
+    flex: 1;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.profile-text-content {
+    flex: 1;
+}
+
+.profile-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.profile-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.facebook-icon {
+    background-color: #1877f2;
+}
+
+.instagram-icon {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.twitter-icon {
+    background-color: #1da1f2;
+}
+
+
+/* Contact Section with Map */
+.contact-map-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-map-content {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 500px;
+}
+
+.contact-form-card {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #1abc9c;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit-button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-submit-button:hover {
+    background-color: #16a085;
+}
+
+.map-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    z-index: 1;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #1abc9c;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-address {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.6;
+}
+
+.footer-website {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-website:hover {
+    opacity: 0.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6b35;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.footer-logo-text h3 {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+.footer-logo-text p {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    opacity: 0.9;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.footer-social-icon.facebook {
+    background-color: #f0f0f0;
+    color: #1877f2;
+}
+
+.footer-social-icon.instagram {
+    background-color: #e91e63;
+    color: white;
+}
+
+.footer-social-icon.youtube {
+    background-color: #ff0000;
+    color: white;
+}

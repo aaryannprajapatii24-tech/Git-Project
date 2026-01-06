@@ -1,0 +1,294 @@
+
+
+/* 576px */
+@media (min-width: 576px) {
+  .hero-text h2 {
+    font-size: 3rem;
+  }
+  .hero-text h3 {
+    font-size: 1.8rem;
+  }
+  .hero-image img {
+    width: 280px;
+  }
+  .choose h2 {
+    font-size: 2.8rem;
+  }
+  .events-content h2 {
+    font-size: 2.2rem;
+  }
+  .reservation-content {
+    max-width: 98%;
+    padding: 0 4px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form-btn {
+    width: 100%;
+  }
+  .form-box h1 {
+    font-size: 32px;
+  }
+  .footer-overlay {
+    padding: 70px 30px;
+  }
+}
+
+/* 768px */
+@media (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: auto;
+    padding: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .contact-info {
+    width: auto;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-text {
+    max-width: 50%;
+  }
+
+
+  .promo-container {
+    flex-direction: row;
+  }
+
+  .promo-column {
+    flex: 1;
+  }
+
+  .big-box {
+    
+    height: 400px;
+  }
+
+  .promo-column .promo-box {
+    height: 190px;
+  }
+
+  .promo-text h4 {
+    font-size: 1.7rem;
+  }
+  .choose-cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .choose-card {
+    flex: 1 1 250px;
+  }
+  .events-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .events-content {
+    flex: 1;
+    text-align: left;
+    padding: 60px 50px;
+  }
+
+  .events-img {
+    flex: 1;
+    text-align: right;
+  }
+
+  .events-img img {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .dots {
+    justify-content: flex-start;
+  }
+  .input-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .input-box button {
+    grid-column: span 2;
+  }
+
+  .form-box {
+    max-width: 600px;
+  }
+
+}
+
+/* 992px */
+@media (min-width: 992px) {
+  .hero-text h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text h3 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    width: 350px;
+  }
+
+  .price-tag {
+    width: 100px;
+    height: 100px;
+  }
+
+  .price-tag p {
+    font-size: 1.2rem;
+  }
+
+  .price-tag span {
+    font-size: 1.6rem;
+  }
+  .promo-container {
+    gap: 30px;
+  }
+
+  .big-box {
+    height: 450px;
+  }
+
+  .promo-column .promo-box {
+    height: 210px;
+  }
+
+  .promo-text h4 {
+    font-size: 1.9rem;
+  }
+  .choose h2 {
+    font-size: 3rem;
+  }
+
+  .choose-card img {
+    max-width: 270px;
+  }
+
+  .choose-card h3 {
+    font-size: 1.3rem;
+  }
+  .events-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .events-content p {
+    font-size: 1rem;
+  }
+  .burger-left,
+  .sauce,
+  .plate {
+    display: block;
+    position: absolute;
+  }
+
+  .burger-left {
+    top: 30px;
+    left: 0;
+    width: 160px;
+  }
+
+  .sauce {
+    left: 120px;
+    bottom: 120px;
+    width: 70px;
+  }
+
+  .plate {
+    bottom: 0;
+    right: 0;
+    width: 260px;
+  }
+
+  .form-box {
+    max-width: 750px;
+  }
+
+  .form-box h1 {
+    font-size: 40px;
+  }
+   .footer-logo h2 {
+    font-size: 28px;
+  }
+  .footer-left p {
+    font-size: 15px;
+  }
+  .contact-item p {
+    font-size: 15px;
+  }
+}
+
+/* 1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .hero-text h2 {
+    font-size: 4rem;
+  }
+
+  .hero-text h3 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image img {
+    width: 400px;
+  }
+  .promo {
+    padding: 100px 0;
+  }
+
+  .promo-container {
+    max-width: 1200px;
+  }
+
+  .promo-text h4 {
+    font-size: 2rem;
+  }
+  .choose {
+    padding: 100px 0;
+  }
+
+  .choose-container {
+    max-width: 1200px;
+  }
+
+  .choose-card img {
+    max-width: 300px;
+  }
+  .events-container {
+    max-width: 1200px;
+  }
+  .burger-left { width: 180px; }
+  .sauce { left: 140px; bottom: 140px; width: 80px; }
+  .plate { width: 300px; }
+  .form-box h1 { font-size: 46px; }
+   .footer-overlay {
+    padding: 90px 40px;
+  }
+  .footer-content {
+    gap: 60px;
+  }
+}

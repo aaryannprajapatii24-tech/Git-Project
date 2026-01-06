@@ -1,0 +1,653 @@
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+        padding: 0 15px;
+    }
+    
+    .main-heading {
+        font-size: 42px;
+    }
+    
+    .shape-yellow-top {
+        width: 250px;
+        height: 150px;
+        right: -80px;
+    }
+    
+    .shape-teal-bottom {
+        width: 280px;
+        height: 200px;
+        left: -80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 10px;
+    }
+    
+    .header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        min-width: 200px;
+        z-index: 1000;
+        border-radius: 8px;
+        gap: 20px;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .main-heading {
+        font-size: 36px;
+    }
+    
+    .main-description {
+        font-size: 16px;
+    }
+    
+    .logo-text h1 {
+        font-size: 24px;
+    }
+    
+    .food-images-main {
+        max-width: 600px;
+        width: 25%;
+    }
+    
+    .burger-image {
+        max-width: 400px;
+        width: 30%;
+        right: -30px;
+        bottom: 30px;
+    }
+    
+    .shape-yellow-top,
+    .shape-teal-bottom {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+    
+    .main-content {
+        min-height: 80vh;
+        padding: 40px 0;
+    }
+    
+    .content-wrapper {
+        min-height: 60vh;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        min-width: 200px;
+        z-index: 1000;
+        border-radius: 8px;
+        gap: 20px;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .main-heading {
+        font-size: 28px;
+    }
+    
+    .main-description {
+        font-size: 14px;
+    }
+    
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .logo {
+        gap: 10px;
+    }
+    
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .logo-text h1 {
+        font-size: 20px;
+    }
+    
+    .logo-subtitle {
+        font-size: 12px;
+    }
+    
+    .teal-shape-image {
+        width: 300px;
+        bottom: 0;
+        left: -80px;
+    }
+    
+    .food-images-main {
+        max-width: 800px;
+        width: 50%;
+    }
+    
+    .burger-image {
+        max-width: 600px;
+        width: 55%;
+        right: -20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .main-content {
+        min-height: 70vh;
+        padding: 30px 0;
+    }
+    
+    .content-wrapper {
+        min-height: 50vh;
+    }
+    
+    .main-heading {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .main-description {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    
+    .cta-button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .teal-shape-image {
+        width: 200px;
+        bottom: 200px;
+        left: -50px;
+    }
+    
+    .food-images-main {
+        bottom: 150px;
+        max-width: 500px;
+        width: 45%;
+    }
+    
+    .burger-image {
+        max-width: 450px;
+        width: 50%;
+        right: -10px;
+        bottom: 5px;
+    }
+
+}
+
+/* Responsive Design for Recipe Section */
+@media (max-width: 768px) {
+    .popular-recipe-section {
+        padding: 40px 0;
+        margin-top: 20px;
+    }
+    
+    .recipe-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .recipe-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .recipe-cards {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .recipe-card {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-recipe-section {
+        padding: 30px 0;
+        margin-top: -30px;
+    }
+    
+    .recipe-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .recipe-description {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .recipe-cards {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .recipe-card {
+        width: 260px;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .food-name {
+        font-size: 16px;
+    }
+    
+    .food-price {
+        font-size: 14px;
+    }
+}
+/* Responsive Design for Promotional Sections */
+@media (max-width: 768px) {
+    .new-promotional-section,
+    .second-promotional-section {
+        padding: 40px 0;
+    }
+    
+    .promotional-content,
+    .promotional-content-reverse {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .promotional-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .promo-heading {
+        font-size: 32px;
+    }
+    
+    .promo-subheading {
+        font-size: 24px;
+    }
+    
+    .promo-description {
+        font-size: 16px;
+    }
+    
+    .plate-container {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .teal-crescent {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .white-plate {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .food-promo-image {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-promotional-section,
+    .second-promotional-section {
+        padding: 30px 0;
+    }
+    
+    .promotional-content,
+    .promotional-content-reverse {
+        gap: 20px;
+    }
+    
+    .promo-heading {
+        font-size: 24px;
+    }
+    
+    .promo-subheading {
+        font-size: 18px;
+    }
+    
+    .promo-description {
+        font-size: 14px;
+    }
+    
+    .promo-button,
+    .promo-button-pink {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .plate-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .teal-crescent {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .white-plate {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .food-promo-image {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Responsive Design for How it Works Section */
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .section-description {
+        font-size: 16px;
+    }
+    
+    .steps-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .step-arrow {
+        transform: rotate(90deg);
+        font-size: 28px;
+    }
+    
+    .step-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .step-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .food-bg-left,
+    .food-bg-right {
+        width: 150px;
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-it-works-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-description {
+        font-size: 14px;
+    }
+    
+    .step-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .step-icon-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+/* Responsive Design for Chef Section */
+@media (max-width: 768px) {
+    .best-chef-section {
+        padding: 50px 0;
+    }
+    
+    .chef-title {
+        font-size: 32px;
+    }
+    
+    .chef-subtitle {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .chef-content {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    
+    .chef-image-container {
+        margin-bottom: -40px;
+        margin-left: 0;
+        z-index: 10;
+    }
+    
+    .chef-person-image {
+        width: 180px;
+        left: 0;
+    }
+    
+    .chef-card {
+        margin-left: 0;
+        width: 90%;
+        max-width: 450px;
+    }
+    
+    .chef-card-content {
+        padding: 70px 30px 30px 30px;
+        text-align: center;
+    }
+    
+    .chef-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .best-chef-section {
+        padding: 40px 0;
+    }
+    
+    .chef-title {
+        font-size: 24px;
+    }
+    
+    .chef-subtitle {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .chef-image-container {
+        margin-bottom: -35px;
+    }
+    
+    .chef-person-image {
+        width: 140px;
+        left: 0;
+    }
+    
+    .chef-card {
+        width: 95%;
+        max-width: 350px;
+        min-height: 250px;
+    }
+    
+    .chef-card-content {
+        padding: 60px 20px 20px 20px;
+    }
+    
+    .chef-description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .chef-name {
+        font-size: 20px;
+    }
+    
+    .chef-position {
+        font-size: 13px;
+    }
+}
+
+/* Responsive Design for Company Profile Section */
+@media (max-width: 768px) {
+    .company-profile-section {
+        padding: 50px 0;
+    }
+    
+    .profile-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .profile-heading {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .profile-description {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-profile-section {
+        padding: 40px 0;
+    }
+    
+    .profile-content {
+        gap: 30px;
+    }
+    
+    .profile-heading {
+        font-size: 24px;
+    }
+    
+    .profile-description {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+/* Responsive Design for Contact and Footer */
+@media (max-width: 968px) {
+    .contact-map-content {
+        flex-direction: column;
+    }
+    
+    .contact-form-card {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .map-background {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-map-section {
+        padding: 40px 0;
+    }
+    
+    .contact-form-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-form-title {
+        font-size: 28px;
+    }
+    
+    .map-background {
+        height: 300px;
+    }
+    
+    .footer-section {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-title {
+        font-size: 18px;
+    }
+}
